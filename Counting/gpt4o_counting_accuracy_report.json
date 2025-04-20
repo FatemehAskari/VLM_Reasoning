@@ -1,0 +1,217 @@
+{
+  "accuracy": 0.1,
+  "total": 30,
+  "correct": 3,
+  "results": [
+    {
+      "image": "output_images\\11\\trial-11_0.png",
+      "true_count": 11,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\11\\trial-11_12.png",
+      "true_count": 11,
+      "predicted_count": 14,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 14"
+    },
+    {
+      "image": "output_images\\11\\trial-11_14.png",
+      "true_count": 11,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\11\\trial-11_17.png",
+      "true_count": 11,
+      "predicted_count": 11,
+      "correct": true,
+      "raw_response": "**Total Number of Circles:** 11"
+    },
+    {
+      "image": "output_images\\11\\trial-11_19.png",
+      "true_count": 11,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\11\\trial-11_20.png",
+      "true_count": 11,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\11\\trial-11_22.png",
+      "true_count": 11,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\11\\trial-11_28.png",
+      "true_count": 11,
+      "predicted_count": 14,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 14"
+    },
+    {
+      "image": "output_images\\11\\trial-11_29.png",
+      "true_count": 11,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\11\\trial-11_32.png",
+      "true_count": 11,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\12\\trial-12_11.png",
+      "true_count": 12,
+      "predicted_count": 14,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 14"
+    },
+    {
+      "image": "output_images\\12\\trial-12_15.png",
+      "true_count": 12,
+      "predicted_count": 14,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 14"
+    },
+    {
+      "image": "output_images\\12\\trial-12_16.png",
+      "true_count": 12,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\12\\trial-12_17.png",
+      "true_count": 12,
+      "predicted_count": 13,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\12\\trial-12_18.png",
+      "true_count": 12,
+      "predicted_count": 12,
+      "correct": true,
+      "raw_response": "**Total Number of Circles:** 12"
+    },
+    {
+      "image": "output_images\\12\\trial-12_19.png",
+      "true_count": 12,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\12\\trial-12_20.png",
+      "true_count": 12,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\12\\trial-12_21.png",
+      "true_count": 12,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\12\\trial-12_22.png",
+      "true_count": 12,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\12\\trial-12_23.png",
+      "true_count": 12,
+      "predicted_count": 14,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 14"
+    },
+    {
+      "image": "output_images\\13\\trial-13_1.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_10.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_11.png",
+      "true_count": 13,
+      "predicted_count": 14,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 14"
+    },
+    {
+      "image": "output_images\\13\\trial-13_12.png",
+      "true_count": 13,
+      "predicted_count": 13,
+      "correct": true,
+      "raw_response": "**Total Number of Circles:** 13"
+    },
+    {
+      "image": "output_images\\13\\trial-13_14.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_17.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_18.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_2.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_20.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    },
+    {
+      "image": "output_images\\13\\trial-13_22.png",
+      "true_count": 13,
+      "predicted_count": 15,
+      "correct": false,
+      "raw_response": "**Total Number of Circles:** 15"
+    }
+  ]
+}
