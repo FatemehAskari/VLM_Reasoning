@@ -1,0 +1,26 @@
+#processe
+
+python main.py --input ./data/images --output ./data/processed --mode colnum --rows 4 --cols 4
+
+#Scence description
+ 
+#2D_Simple 
+python process_vlm_images.py --mode simple --dimension 2d --input /path/to/2d/base_data --output /path/to/2d/output_json
+
+
+#2D_Row
+python process_vlm_images.py --mode row --dimension 2d --input /path/to/2d/row_data --output /path/to/2d/output_row_json
+
+
+#3D_Simple 
+python process_vlm_images.py --mode simple --dimension 3d --input /path/to/3d/base_data --output /path/to/3d/output_json
+
+
+#3D_Row
+python process_vlm_images.py --mode row --dimension 3d --input /path/to/3d/base_data_row --output /path/to/3d/output_json_row
+
+#counting_2D_simple
+python count_shapes_cli.py --mode simple --dimension 2d --input /path/to/images --output results_2d_simple.json
+
+#counting_3D_row
+python count_shapes_cli.py --mode row --dimension 3d --input /path/to/images --output results_3d_row.json
