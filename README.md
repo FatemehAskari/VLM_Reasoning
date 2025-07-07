@@ -38,7 +38,14 @@ To generate the datasets used in our experiments, navigate to the `data/task_scr
 cd data/task_scripts
 
 # Generate Visual Search Datasets
-python generate_visual_search.py --dimension 2d --output_dir ../visual_search/2d --num_samples 1000
+python task_scripts/gen_vlm_search.py --n_objects 5 10 15 20 25 30 35 40 45 50 \
+                                      --n_trials=100 \
+                                      --size=22 \
+                                      --use_letters=True \
+                                      --colors green red \
+                                      --output_dir=data/vlm/search
+
+                                      
 python generate_visual_search.py --dimension 3d --output_dir ../visual_search/3d --num_samples 1000
 
 # Generate Counting Datasets
