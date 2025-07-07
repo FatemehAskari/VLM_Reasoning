@@ -1,4 +1,10 @@
-# Visual Structures Help Visual Reasoning
+# Visual Structures Helps Visual Reasoning: Addressing the Binding Problem in VLMs
+\[[Read our arXiv Paper](https://arxiv.org/pdf/2506.22146)\] 
+
+Amirmohammad Izadi,Mohammad Ali Banayeeanzade, Fatemeh Askari,Ali Rahimiakbar,Mohammad Mahdi Vahedi, Hosein Hasani,and Mahdieh Soleymani Baghshah
+
+
+### Introduction
 <div style="text-align: justify">
 
 Despite recent advancements in **Vision-Language Models (VLMs)**, these models often struggle with tasks that require associating visual features—like shape and color—with their correct positions. This issue, known as the *binding problem*, leads to failures in tasks such as **counting**, **visual search**, **scene description**, and understanding **spatial relationships**.
