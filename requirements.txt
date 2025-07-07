@@ -1,0 +1,12 @@
+torch>=2.1
+transformers>=4.40
+pandas>=1.5
+tqdm>=4.60
+Pillow>=9.5
+python-dotenv>=1.0
+langchain-openai>=0.0.5
+
+opencv-python>=4.8
+matplotlib>=3.7
+
+freetype-py>=2.4
