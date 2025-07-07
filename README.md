@@ -81,3 +81,38 @@ python gen_vlm_binding.py \
 
 # Generate Reasoning Dataset
 python gen_binding_trace.py
+
+```
+
+## Running the Pipeline
+
+### Dataset Inference
+You can process the generated 2D/3D datasets using either Close-source or Open-source models: 
+
+####  Close-Source
+
+```bash
+cd code 
+python closed_source/Scene_Description/code.py \
+    --mode simple \
+    --dimension 2d \
+    --input ../data/scene_description/2D/base_data \
+    --output ../outputs/scene_description/2D/simple_json
+```
+This will run GPT-4o on your dataset and save the parsed JSON results to the specified output path.
+
+You can swap GPT-4o with other vision-capable LLMs, such as Claude-Sonnet or LLaMA4, by modifying the model and base_url values in your .env file—ensuring the API remains compatible with ChatOpenAI.
+
+You may also adjust the --mode, --dimension, --input, and --output arguments to apply the same script to other tasks such as counting, visual search, scene description, or 3D variants. The core processing logic remains unchanged.
+
+####  Open-Source
+
+### Reasoning Trace 
+
+This task involves analyzing an image of squares distributed across 4 horizontal rows and assigning each object to the correct row. You can run it using the script below.
+
+
+
+
+
+
