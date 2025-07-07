@@ -1,7 +1,7 @@
 # Visual Structures Helps Visual Reasoning: Addressing the Binding Problem in VLMs
 \[[Read our arXiv Paper](https://arxiv.org/pdf/2506.22146)\] 
 
-Amirmohammad Izadi,Mohammad Ali Banayeeanzade, Fatemeh Askari,Ali Rahimiakbar,Mohammad Mahdi Vahedi, Hosein Hasani,and Mahdieh Soleymani Baghshah
+Amirmohammad Izadi,Mohammad Ali Banayeeanzade, Fatemeh Askari,Ali Rahimiakbar,Mohammad Mahdi Vahedi, Hosein Hasani,Mahdieh Soleymani Baghshah
 
 
 ### Introduction
@@ -18,10 +18,36 @@ Our work introduces a simple but powerful fix: we add lightweight **visual struc
 
 To set up the environment and install the required dependencies for this project, follow the steps below.
 
-### 1. Clone the repository
-
 ```bash
 git clone https://github.com/FatemehAskari/VLM_Reasoning.git
 cd code
 pip install --upgrade pip 
 pip install -r requirements.txt
+```
+
+## Dataset
+
+To generate the datasets used in our experiments, navigate to the `data/task_scripts` directory. Each dataset is generated using a Python script with configurable arguments, and supports both 2D and 3D visual settings (for Visual Search, Counting, and Scene Description).
+
+---
+
+### 🔧 Dataset Generation Commands
+
+```bash
+# Navigate to script directory
+cd data/task_scripts
+
+# Generate Visual Search Datasets
+python generate_visual_search.py --dimension 2d --output_dir ../visual_search/2d --num_samples 1000
+python generate_visual_search.py --dimension 3d --output_dir ../visual_search/3d --num_samples 1000
+
+# Generate Counting Datasets
+python generate_counting.py --dimension 2d --output_dir ../counting/2d --num_samples 1000
+python generate_counting.py --dimension 3d --output_dir ../counting/3d --num_samples 1000
+
+# Generate Scene Description Datasets
+python generate_scene_description.py --dimension 2d --output_dir ../scene_description/2d --num_samples 500
+python generate_scene_description.py --dimension 3d --output_dir ../scene_description/3d --num_samples 500
+
+# Generate Reasoning Dataset
+python generate_reasoning.py --mode hard --output_dir ../reasoning --num_samples 200
