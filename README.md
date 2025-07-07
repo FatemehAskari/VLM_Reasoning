@@ -144,10 +144,11 @@ Below are example visual reasoning inputs across four core tasks in our benchmar
 
 | Task                   | Example Image                              | Description                                                                 |
 |------------------------|--------------------------------------------|-----------------------------------------------------------------------------|
-| **Visual Search**      | ![](assets/search.jpg)     | Identify a target object (e.g., green triangle) among distractors.         |
-| **Counting**           | ![](assets/count.jpg)          | Count the number of specific objects, considering both shape and color.    |
-| **Spatial Relationship** | ![](assets/spatial.jpg)           | Determine spatial relationships like "left of" or "above" among objects.   |
-| **Scene Description**  | ![](assets/scene.jpg) | Describe a scene by listing all objects with correct shape and color.      |
+| **Visual Search**      | <img src="assets/search.jpg" width="150"/> | Identify a target object (e.g., green triangle) among distractors.         |
+| **Counting**           | <img src="assets/count.jpg" width="150"/>  | Count the number of specific objects, considering both shape and color.    |
+| **Spatial Relationship** | <img src="assets/spatial.jpg" width="150"/> | Determine spatial relationships like "left of" or "above" among objects.   |
+| **Scene Description**  | <img src="assets/scene.jpg" width="150"/>  | Describe a scene by listing all objects with correct shape and color.      |
+
 
 ## Citation
 ```bash
