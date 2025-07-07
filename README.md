@@ -12,6 +12,16 @@ Despite recent advancements in **Vision-Language Models (VLMs)**, these models o
 Our work introduces a simple but powerful fix: we add lightweight **visual structures** (e.g., horizontal lines) to the images and pair them with task-specific prompts that guide the model to reason in a **spatially grounded**, sequential manner. As shown in the example below, this structured setup helps models like **GPT-4o** reason more accurately—achieving significant improvements across multiple tasks.
 
 </div>
-
-
 <p align="center"> <img src="assets/final_image.jpg" width="800" alt="Visual Structuring Example"> </p>
+
+## Installation
+
+To set up the environment and install the required dependencies for this project, follow the steps below.
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/FatemehAskari/VLM_Reasoning.git
+cd code
+pip install --upgrade pip 
+pip install -r requirements.txt
