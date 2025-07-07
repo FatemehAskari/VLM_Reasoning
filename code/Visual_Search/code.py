@@ -8,12 +8,11 @@ from langchain_openai import ChatOpenAI
 
 # --------------- LLM Setup ---------------
 llm = ChatOpenAI(
-    base_url="https://api.avalai.ir/v1",
+    base_url=os.getenv("OPENAI_BASE_URL"),
     model="gpt-4o",
-    api_key="aa-IbxIACL4oknjL1lneG03Cgum5IrWc0PGV5KyH8JwU3At7yj3",
+    api_key=os.getenv("OPENAI_API_KEY"),
     temperature=0,
 )
-
 # ------------- Utility Functions -------------
 def encode_image(image_path):
     """Convert image to base64."""

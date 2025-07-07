@@ -8,9 +8,10 @@ from langchain_openai import ChatOpenAI
 
 # Set up LLM
 llm = ChatOpenAI(
-    base_url="https://api.avalai.ir/v1",
+    base_url=os.getenv("OPENAI_BASE_URL"),
     model="gpt-4o",
-    api_key="aa-z5JgvGfB31PLFv9bFZPNbva7q56UZi7pXdBj34oas1fktrgG",
+    api_key=os.getenv("OPENAI_API_KEY"),
+    temperature=0,
 )
 
 # ---------------- UTILS ----------------
