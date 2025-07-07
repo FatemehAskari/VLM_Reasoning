@@ -139,6 +139,26 @@ python evaluate_binding_reasoning.py
 python result.py
 ```
 
+## Example
+Below are example visual reasoning inputs across four core tasks in our benchmark:
+
+| Task                   | Example Image                              | Description                                                                 |
+|------------------------|--------------------------------------------|-----------------------------------------------------------------------------|
+| **Visual Search**      | ![](assets/search.jpg)     | Identify a target object (e.g., green triangle) among distractors.         |
+| **Counting**           | ![](assets/count.jpg)          | Count the number of specific objects, considering both shape and color.    |
+| **Spatial Relationship** | ![](assets/spatial.jpg)           | Determine spatial relationships like "left of" or "above" among objects.   |
+| **Scene Description**  | ![](assets/scene.jpg) | Describe a scene by listing all objects with correct shape and color.      |
+
+## Citation
+```bash
+@article{izadi2025visual,
+  title={Visual Structures Helps Visual Reasoning: Addressing the Binding Problem in VLMs},
+  author={Izadi, Amirmohammad and Banayeeanzade, Mohammad Ali and Askari, Fatemeh and Rahimiakbar, Ali and Vahedi, Mohammad Mahdi and Hasani, Hosein and Baghshah, Mahdieh Soleymani},
+  journal={arXiv preprint arXiv:2506.22146},
+  year={2025}
+}
+```
+
 
 
 
