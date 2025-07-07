@@ -38,23 +38,46 @@ To generate the datasets used in our experiments, navigate to the `data/task_scr
 cd data/task_scripts
 
 # Generate Visual Search Datasets
-python task_scripts/gen_vlm_search.py --n_objects 5 10 15 20 25 30 35 40 45 50 \
+
+#2D
+python gen_vlm_search.py --n_objects 5 10 15 20 25 30 35 40 45 50 \
                                       --n_trials=100 \
                                       --size=22 \
                                       --use_letters=True \
                                       --colors green red \
                                       --output_dir=data/vlm/search
 
-                                      
-python generate_visual_search.py --dimension 3d --output_dir ../visual_search/3d --num_samples 1000
+#3D
+<BLENDER_PATH>/blender -b -P gen_blender_search.py
+
 
 # Generate Counting Datasets
-python generate_counting.py --dimension 2d --output_dir ../counting/2d --num_samples 1000
-python generate_counting.py --dimension 3d --output_dir ../counting/3d --num_samples 1000
+
+# 2D
+python gen_vlm_counting.py --object_inds=37 \
+                                        --n_trials=100 \
+                                        --n_shapes 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 \
+                                        --size=40 \
+                                        --all_black=True \
+                                        --output_dir=data/vlm/counting_black
+
+#3D
+<BLENDER_PATH>/blender -b -P gen_blender_counting.py
 
 # Generate Scene Description Datasets
-python generate_scene_description.py --dimension 2d --output_dir ../scene_description/2d --num_samples 500
-python generate_scene_description.py --dimension 3d --output_dir ../scene_description/3d --num_samples 500
+
+# 2D
+python gen_vlm_binding.py \
+  --n_objects 10 15 20 \
+  --n_trials 20 \
+  --size 42 \
+  --color_names red magenta salmon green lime olive blue teal yellow purple brown gray black cyan orange \
+  --shape_names airplane triangle cloud cross umbrella scissors heart star circle square infinity up-arrow pentagon left-arrow flag \
+  --shape_inds 6 9 21 24 34 60 96 98 100 101 5 22 59 13 35 \
+  --output_dir ../vlm/reasoning/2d
+
+#3D
+<BLENDER_PATH>/blender -b -P gen_blender_binding.py
 
 # Generate Reasoning Dataset
-python generate_reasoning.py --mode hard --output_dir ../reasoning --num_samples 200
+python gen_binding_trace.py
