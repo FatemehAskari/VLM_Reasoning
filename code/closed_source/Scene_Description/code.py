@@ -7,6 +7,9 @@ from pathlib import Path
 from tqdm.auto import tqdm
 from langchain_openai import ChatOpenAI
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # ---------------- LLM SETUP ----------------
 llm = ChatOpenAI(
     base_url=os.getenv("OPENAI_BASE_URL"),

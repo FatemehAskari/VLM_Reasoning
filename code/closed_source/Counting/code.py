@@ -6,6 +6,9 @@ import argparse
 from pathlib import Path
 from langchain_openai import ChatOpenAI
 
+from dotenv import load_dotenv
+load_dotenv()
+
 # Set up LLM
 llm = ChatOpenAI(
     base_url=os.getenv("OPENAI_BASE_URL"),

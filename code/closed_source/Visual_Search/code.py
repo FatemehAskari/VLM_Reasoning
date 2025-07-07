@@ -5,6 +5,10 @@ import base64
 import argparse
 from pathlib import Path
 from langchain_openai import ChatOpenAI
+from dotenv import load_dotenv
+
+
+load_dotenv()
 
 # --------------- LLM Setup ---------------
 llm = ChatOpenAI(
@@ -13,6 +17,7 @@ llm = ChatOpenAI(
     api_key=os.getenv("OPENAI_API_KEY"),
     temperature=0,
 )
+
 # ------------- Utility Functions -------------
 def encode_image(image_path):
     """Convert image to base64."""
