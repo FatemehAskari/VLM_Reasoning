@@ -106,12 +106,38 @@ You can swap GPT-4o with other vision-capable LLMs, such as Claude-Sonnet or LLa
 You may also adjust the --mode, --dimension, --input, and --output arguments to apply the same script to other tasks such as counting, visual search, scene description, or 3D variants. The core processing logic remains unchanged.
 
 ####  Open-Source
+You can process your dataset using the following command:
+
+```bash
+cd code 
+python open_source/qwen_2D.py \
+    --mode row \
+    --input data/scene_description/row_data \
+    --output results/scene_description/row_output
+```
 
 ### Reasoning Trace 
 
 This task involves analyzing an image of squares distributed across 4 horizontal rows and assigning each object to the correct row. You can run it using the script below.
 
+You can run the reasoning trace script using the following example:
 
+```bash
+cd code 
+python run_reasoning_trace.py \
+    --mode row \
+    --input data/reasoning_trace/row_images \
+    --output results/reasoning_trace/row_outputs
+```
+
+Once the reasoning trace predictions have been generated and saved, you can evaluate the results using the following scripts:
+
+```bash
+cd utils
+python create_json.py
+python evaluate_binding_reasoning.py
+python result.py
+```
 
 
 
